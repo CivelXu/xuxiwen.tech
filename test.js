@@ -10,14 +10,9 @@ const urlPattern = /^https:\/\/wap\.showstart\.com\/v3\/order\/wap\/order\/confi
 const requestHandler = async (request) => {
     const headers = request.headers; // 获取请求头部信息
     const extractedHeaders = {
-        'CUSIT': headers['CUSIT'],
-        'CUUSERREF': headers['CUUSERREF'],
-        'CUSID': headers['CUSID'],
-        'CUSAT': headers['CUSAT'],
-        'CRPSIGN': headers['CRPSIGN'],
-        'CUSUT': headers['CUSUT'],
-        'CDEVICEINFO': headers['CDEVICEINFO'],
-        'Cookie': headers['Cookie'],
+        'st_flpv': headers['st_flpv'],
+        'token': headers['CUSUT'],
+        'sign': headers['CDEVICEINFO'],
     };
 
     console.log("拦截的 Header 参数:");
