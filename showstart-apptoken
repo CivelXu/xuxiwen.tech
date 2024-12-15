@@ -1,1 +1,6 @@
+[rewrite_local]
 http-request ^https:\/\/wap\.showstart\.com\/v3\/order\/wap\/order\/confirm\/v2 script-path=https://raw.githubusercontent.com/CivelXu/xuxiwen.tech/refs/heads/main/test.js, requires-body=false
+
+
+[MITM]
+hostname = wap.showstart.com
