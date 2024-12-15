@@ -11,6 +11,7 @@ const requestHandler = async (request) => {
     const headers = request.headers; // 获取请求头部信息
     const extractedHeaders = {
         'st_flpv': headers['st_flpv'],
+        'userId': headers['CUSID'],
         'token': headers['CUSUT'],
         'sign': headers['CDEVICEINFO'],
     };
