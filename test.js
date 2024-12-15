@@ -13,7 +13,7 @@ const requestHandler = async (request) => {
         'st_flpv': headers['st_flpv'],
         'userId': headers['CUSID'],
         'token': headers['CUSUT'],
-        'sign': headers['CDEVICENO'],
+        'sign': headers['CUUSERREF'],
     };
 
     console.log("拦截的 Header 参数:");
