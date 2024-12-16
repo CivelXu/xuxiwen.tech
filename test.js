@@ -12,8 +12,8 @@ const requestHandler = async (request) => {
     const extractedHeaders = {
         'st_flpv': headers['st_flpv'],
         'userId': headers['CUSID'],
-        'token': headers['CUSUT'],
-        'sign': headers['CUUSERREF'],
+        'sign': headers['CUSUT'],
+        'token': headers['CDEVICENO'],
     };
 
     console.log("拦截的 Header 参数:");
